@@ -1037,3 +1037,156 @@ button{
                 14em 15em #e7eef1,
                 15em 15em #e7eef1;
 }
+
+/* ### Modern Layouts ### */
+
+/* layout-1 */
+
+.layout1 header{
+    border: 3px dotted gray;
+    margin-bottom: 1%;
+}
+
+.layout1 article{
+    border: 3px dotted gray;
+    width: 50%;
+    float:left;
+    margin-bottom: 1%;
+}
+
+.layout1 aside{
+    border: 3px dotted gray;
+    width: 40%;
+    float: right;
+    margin-bottom: 1%;
+}
+
+.layout1 footer{
+    border: 3px dotted gray;
+    clear: both;
+    margin-bottom: 1%;
+}
+
+/* layout-2 */
+
+.layout2 header .logo{
+    width: 20;
+    float: left;
+    margin: 0;
+    border: 3px dotted gray;
+    margin-bottom: 1%;
+}
+
+.layout2 header nav{
+    width: 78%;
+    float: right;
+    margin: 0;
+    border: 3px dotted gray;
+    margin-bottom: 1%;
+}
+
+.layout2 ul li{
+    display: inline;
+}
+
+.layout2 header::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.layout2 article{
+    width: 50%;
+    margin-left: 2%;
+    float: left;
+    border: 3px dotted gray;
+    margin-bottom: 1%;
+}
+
+.layout2 aside.sidenav{
+    width: 23%;
+    float: left;
+    border: 3px dotted gray;
+    margin-bottom: 1%;
+}
+
+.layout2 aside.sidebar{
+    width: 23%;
+    float: right;
+    border: 3px dotted gray;
+    margin-bottom: 1%;
+}
+
+.layout2 footer{
+    border: 3px dotted gray;
+    clear: both;
+}
+
+
+/* layout-3 */
+
+.layout3 header .logo{
+    width: 20%;
+    float: right;
+    margin: 0;
+    border: 3px dotted gray;
+    /* margin-bottom: 1%; */
+}
+
+.layout3 header nav{
+    width: 78%;
+    float: left;
+    margin: 0;
+    border: 3px dotted gray;
+    margin-bottom: 1%;
+}
+
+.layout3 ul li{
+    display: inline;
+}
+
+.layout3 header::after{
+    display: table;
+    content: "";
+    clear:both;
+}
+
+.layout3 article{
+    width: 31.5%;
+    float: left;
+    margin: 0 2% 1% 0;
+    border: 3px dotted gray;
+}
+
+.layout3 article:last-child{
+    margin: 0;
+}
+
+.layout3 .articles::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.layout3 footer{
+    border: 3px dotted gray;
+    clear: both;
+}
+
+@media screen and (max-width: 768){
+    .layout1 article,
+    .layout1 aside,
+    .layout2 header .logo,
+    .layout2 header nav,
+    .layout2 article,
+    .layout2 aside.sidenav,
+    .layout2 aside.sidebar,
+    .layout3 article,
+    .layout3 aside,
+    .layout3 header .logo,
+    .layout3 header nav {
+        float: none;
+        width: 100%;
+        margin: 0 0 2%;
+    }
+}

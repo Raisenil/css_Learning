@@ -1376,3 +1376,32 @@ button{
         padding-top: 30px;
     }
 }
+
+/* ### CSS Variables ### */
+
+.var{
+    --primary-color:orangered;
+    --secondary-color:hotpink;
+    --base-measurement:20px;
+}
+
+.var .box{
+    text-align: center;
+    --text-color:#f3f3f3;
+
+    color: var(--text-color);
+
+    background: var(--primary-color);
+
+    margin: var(--base-measurement);
+
+    height: calc(var(--base-measurement)*10);
+    width: calc(var(--base-measurement)*10);
+    line-height: calc(var(--base-measurement)*10);
+}
+
+.var .box2{
+    background: var(--secondary-color);
+}
+
+

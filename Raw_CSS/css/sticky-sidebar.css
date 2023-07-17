@@ -1,0 +1,36 @@
+.sticky-sidebar{
+    border: 5px dotted gray;
+    border-radius: 20px;
+}
+
+
+.sticky-sidebar-lesson{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sticky-sidebar-lesson::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.sticky-sidebar-lesson .sandbox{
+    width: 60%;
+    margin: 0 0 40px;
+    float: left;
+}
+
+.sticky-sidebar{
+    border: 5px dotted gray;
+    border-radius: 20px;
+    background: #e7eef1;
+    padding: 40px 40px 60px;
+    box-sizing: border-box;
+    box-shadow: 0 12px 0 -6px darkgray;
+
+    position: fixed;
+    right: 5%;
+    width: 36%;
+    float: right;
+}

@@ -1884,6 +1884,10 @@ input[type="checkbox"]:checked ~ .modal{
 }
 
 .top{
+    z-index: 2;
+}
+
+.mid{
     z-index: 1;
 }
 

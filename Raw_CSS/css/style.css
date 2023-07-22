@@ -2009,3 +2009,127 @@ input[type="checkbox"]:checked ~ .modal{
         transform: translateX(120%) rotate(-180deg);
     }
 }
+
+/* ### Modern Layout Using Flexbox ### */
+
+.layout1f article,
+.layout2f article,
+.layout3f article,
+.layout1f aside,
+.layout2f aside,
+.layout3f aside,
+.layout1f header,
+.layout1f footer,
+.layout2f header,
+.layout2f footer,
+.layout3f header,
+.layout3f footer
+{
+    margin: 5px;
+    padding: 5px 20px 5px 20px;
+    border: 1px dotted gray;
+}
+
+.layout2f header nav ul li,
+.layout3f header nav ul li{
+    display: inline;
+}
+
+.layout2f .logo{
+    padding: 12px 10px 10px 0;
+    /* border: 1px dotted gray; */
+}
+
+.layout3f .logo{
+    padding: 12px 0 0 0;
+}
+
+.layout1f main{
+    display: flex;
+    flex-direction: row;
+}
+
+.layout1f article{
+    
+    flex: 1 58%;
+}
+
+
+.layout2f header{
+    display: flex;
+    flex-direction: row;
+}
+
+.layout2f header nav{
+    flex: 1;
+    margin-left: 2%;
+}
+
+.layout2f main{
+    display: flex;
+    flex-direction: row;
+}
+
+.layout2f article{
+    flex: 1 56%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.layout2f aside.sidenav,
+.layout2f aside.sidebar{
+    flex:1 20%;
+}
+
+
+.layout3f header{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.layout3f header nav{
+    flex: 1;
+    margin-right: 2%;
+}
+
+.layout3f .articles{
+    display: flex;
+    flex-direction: row;
+}
+
+.layout3f article{
+    flex: 1;
+    margin: 0 2%;
+}
+
+.layout3f article:first-child,
+.layout3f article:last-child{
+    margin: 0.5%;
+}
+
+@media screen and ( max-width : 768px ) {
+    .layout1f main,
+    .layout1f article,
+    .layout1f aside,
+    .layout2f header,
+    .layout2f header .logo,
+    .layout2f header nav,
+    .layout2f main,
+    .layout2f article,
+    .layout2f aside.sidenav,
+    .layout2f aside.sidebar,
+    .layout3f main,
+    .layout3f .articles,
+    .layout3f article,
+    .layout3f aside,
+    .layout3f header,
+    .layout3f header .logo,
+    .layout3f header nav {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0 0 2%;
+    }
+}
+
+

@@ -2297,3 +2297,53 @@ input[type="checkbox"]:checked ~ .modal{
 .layers:hover img.tippy{
     transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) translateX(35px) translateY(0px) translateZ(260px);
 }
+
+/* ### Dropdown Menu ### */
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+}
+
+.dropdown__hover{
+    display: inline-block;
+    padding: 10px;
+    background-color: #323b40;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.dropdown__hover:hover{
+    background: #222;
+}
+
+.dropdown__menu{
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background: white;
+    color: #323b40;
+    box-shadow: 0 3px 2px rgba(0,0,0,0.3);
+}
+
+.dropdown:hover .dropdown__menu{
+    display: block;
+}
+
+.dropdown__menu a{
+    display: block;
+    color: #00B3B4;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    border-top: solid 1px #e0e0e0;
+}
+
+.dropdown__menu a:hover{
+    background: #f0f0f0;
+    color: #323b40;
+}
